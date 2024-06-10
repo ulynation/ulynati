@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ULYNATION Historical Club</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to ULYNATION Historical Club</h1>
+    </header>
+    <div class="container">
+        <div class="language-buttons">
+            <button class="language-button" onclick="changeLanguage('en')">English</button>
+            <button class="language-button" onclick="changeLanguage('ru')">Русский</button>
+            <button class="language-button" onclick="changeLanguage('kk')">Қазақша</button>
+        </div>
+        <div id="club-info">
+            <!-- Information about the club will be displayed here -->
+        </div>
+        <a class="contact-button" href="https://wa.me/qr/KTO5PHH7H6XEF1" target="_blank">Contact Organizer via WhatsApp</a>
+        <form id="registration-form" action="/register" method="post">
+            <h2>Registration Form</h2>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="class">Class</label>
+            <input type="text" id="class" name="class" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 ULYNATION Historical Club. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
